@@ -2,7 +2,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 
-import html_scraper, util, dates
+from gol_voos import html_scraper, util, dates
 from selenium import webdriver
 import time
 

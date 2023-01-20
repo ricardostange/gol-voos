@@ -24,7 +24,6 @@ def is_flight_sold_out(card_html):
     # TODO: Check if this needs implementation
     return False
 
-
 def get_prices_from_card(card_html):
     prices_found = re.findall(r'R\$\s\d*\.?\d+,\d+', str(card_html))
     prices = [int(price.replace('R$', '').replace(',', '').replace('.', ''))/100 for price in prices_found]
